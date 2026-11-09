@@ -1,0 +1,6 @@
+{
+  "appId": "com.tecnolauncher.app",
+  "appName": "TecnoLauncher",
+  "webDir": "www",
+  "plugins": { "CapacitorHttp": { "enabled": true } }
+}

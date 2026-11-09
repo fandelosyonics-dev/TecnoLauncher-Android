@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>TecnoLauncher</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header><span class="logo">⚡ Tecno<b>Launcher</b></span><small>2.0</small></header>
+<main>
+  <section id="tab-home" class="tab active">
+    <div class="hero">
+      <div class="big">⛏️</div>
+      <h2>Minecraft</h2>
+      <p>Abre tu juego instalado desde aquí.</p>
+      <button class="btn" id="btnBedrock">▶ Abrir Minecraft (Bedrock)</button>
+      <button class="btn alt" id="btnPojav">☕ Abrir PojavLauncher (Java)</button>
+      <p class="hint">Minecraft Java en el celular necesita un launcher como PojavLauncher. Esta app lo abre, pero no lo reemplaza.</p>
+    </div>
+  </section>
+
+  <section id="tab-servers" class="tab">
+    <h3>Servidores</h3>
+    <div class="card form">
+      <input id="srvName" placeholder="Nombre" maxlength="40" />
+      <input id="srvIP" placeholder="IP (ej: play.servidor.net)" autocapitalize="none" />
+      <button class="btn small" id="btnAdd">＋ Agregar</button>
+    </div>
+    <div id="serversList"></div>
+  </section>
+
+  <section id="tab-versions" class="tab">
+    <h3>Versiones de Minecraft</h3>
+    <label class="check"><input type="checkbox" id="snap" /> Mostrar snapshots</label>
+    <div id="versionsList" class="card">Cargando…</div>
+  </section>
+</main>
+<nav>
+  <button data-tab="home" class="on">🏠<span>Inicio</span></button>
+  <button data-tab="servers">🌐<span>Servidores</span></button>
+  <button data-tab="versions">📦<span>Versiones</span></button>
+</nav>
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
